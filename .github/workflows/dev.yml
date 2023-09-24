@@ -3,7 +3,7 @@ name: "Terraform- dev"
 on: 
   push:
     branches: 
-    - master1
+    - master
     paths: 
     - environments/dev/**
   pull_request: 
