@@ -8,9 +8,9 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "tf-state-deenginers-project"
+    bucket = "udacity-tf-shine"
     key    = "dev/terraform.tfstate"
-    region = "eu-west-2"
+    region = "us-east-2"
   }
 }
 
