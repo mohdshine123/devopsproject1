@@ -99,3 +99,14 @@ resource "aws_route_table_association" "private_rt_assoc" {
   route_table_id = aws_route_table.private_rt[count.index].id
 }
 
+resource "aws_security_group" "opensearch-sec" {
+  name   = "opensearch-octane"
+  vpc_id = aws_vpc.webapp_vpc.id
+
+  ingress {
+    from_port = 443
+    to_port   = 443
+    protocol  = "tcp"
+    cidr_blocks  = [aws_vpc.webapp_vpc.cidr_block]
+  }
+}
