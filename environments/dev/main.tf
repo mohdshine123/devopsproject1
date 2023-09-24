@@ -18,7 +18,7 @@ module "vpc" {
   #public_subnet_ids  = module.vpc.public_subnet_ids
   #private_subnet_ids = module.vpc.private_subnet_ids
   #instance_type      = var.instance_type
-  3key_name           = var.key_name
+  #key_name           = var.key_name
 
 #}
 
